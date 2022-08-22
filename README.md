@@ -58,3 +58,14 @@
 点击绿色三角形按钮即可运行项目
 ![img_12.png](img_12.png)
 其中@Scheduled(cron = "0 30 7 * * ?")为定时任务。
+测试完成（idea不关闭项目一直运行。可以打包部署节省内存资源）
+
+## 四、部署（可选）
+打包
+![img_14.png](img_14.png)
+完成后左边目录中找到target文件夹，里面找到打包好的jar文件，可以将此文件上传到服务器中。
+![img_15.png](img_15.png)
+运行java -jar wechatpush-0.0.1-SNAPSHOT.jar
+![img_16.png](img_16.png)
+教程完毕！
+QQ：1813774883
