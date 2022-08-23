@@ -1,4 +1,4 @@
-# 已同步至码云[https://gitee.com/junruo/Wechatpush](https://gitee.com/junruo/Wechatpush)
+# 已同步至码云[https://gitee.com/junxiaoruo/Wechatpush](https://gitee.com/junxiaoruo/Wechatpush)
 
 # 一、注册测试号
 点进去微信扫码[https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
