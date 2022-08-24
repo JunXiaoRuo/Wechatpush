@@ -1,26 +1,49 @@
 package cn.junruo.config;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+
+import javax.annotation.PostConstruct;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class JiNianRiUtils {
+@Configuration
+public class MemorialDayUtils {
+
+    @Value("${config.memorialDay.loveDate}")
+    private String loveDate;
+    @Value("${config.memorialDay.myBirthday}")
+    private String myBirthday;
+    @Value("${config.memorialDay.youBirthday}")
+    private String youBirthday;
+
+    private static String stLoveDate;
+    private static String stMyBirthday;
+    private static String stYouBirthday;
+
+    @PostConstruct
+    public void setExpDate() {
+        stLoveDate = this.loveDate;
+        stMyBirthday = this.myBirthday;
+        stYouBirthday = this.youBirthday;
+    }
 
     public static int getLianAi(){
-        return calculationLianAi("2021-11-06");
+        return calculationLianAi(stLoveDate);
     }
-    public static int getBirthday_Jo(){
+    public static int getBirthdayMy(){
         try {
-            return calculationBirthday("2000-04-03");
+            return calculationBirthday(stMyBirthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         return 0;
     }
-    public static int getBirthday_Hui(){
+    public static int getBirthdayYou(){
         try {
-            return calculationBirthday("2000-09-11");
+            return calculationBirthday(stYouBirthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -1,2 +1,48 @@
+# 注意冒号后面要有一个空格
+# 注意冒号后面要有一个空格
+# 注意冒号后面要有一个空格
+# 注意冒号后面要有一个空格
+
+# 服务器端口
 server:
   port: 8889
+
+# 配置信息
+config:
+  # 执行时间(每天早上7点半)
+  time: 0 30 07 ? * *
+  # 微信公众平台配置
+  wechart:
+    appID: 111111111111
+    appsecret: 111111111111
+
+  # 接收者微信号配置（可配置多个微信，用英文逗号（,）分割，末尾请不要使用逗号，不用引号）
+  openID: 1111111,2222222222
+
+  # 模板id设置
+  templateID: 111111111111
+
+  # 天气设置
+  baiduMap:
+    # 行政地点名
+    name: 成都双流区
+    # 设置行政代码（具体代码请百度，成都双流行政代码：510116）：查询：[https://mapopen-website-wiki.bj.bcebos.com/cityList/weather_district_id.csv]
+    districtId: 510116
+    # 百度地图应用AK
+    ak: 1111111
+
+  # 天行数据key配置
+  tianKey: 11111111
+
+  # 纪念日设置
+  memorialDay:
+    # 相恋日期
+    loveDate: 2022-03-25
+    # 你的昵称
+    myName: 小明
+    # Ta的昵称
+    youName: 小红
+    # 我的生日
+    myBirthday: 2000-05-06
+    # Ta的生日
+    youBirthday: 2000-08-24
