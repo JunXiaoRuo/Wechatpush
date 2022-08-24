@@ -6,7 +6,7 @@
 可以推送给多人，见配置文件。  
 取消了彩虹屁api，使用英语一句话api进行中英文对接。  
 QQ：1813774883  
-抖音群：207457615403
+QQ群：747234568
 
 # 前置条件
 windows用户需要提前安装jdk1.8并配置好环境变量：可以参考[https://blog.csdn.net/m0_62589051/article/details/125801467](https://blog.csdn.net/m0_62589051/article/details/125801467)  
@@ -101,7 +101,7 @@ linux系统使用：nohup java -jar wechatpush-0.0.1-SNAPSHOT.jar >temp.txt 2>&1
   
 教程完毕！  
 QQ：1813774883  
-抖音群：207457615403
+QQ群：747234568
 
 # 常见问题  
 ## 1，在哪修改推送内容呢？  
